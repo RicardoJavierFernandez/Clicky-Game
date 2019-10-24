@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+#navBar {
+    font-size: 24px;
+    background: skyblue;
+}
+
+#title {
+    text-align: center;
+}
+
+#score, #topScore {
+    color: #000000;
+    text-align: right;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+}
