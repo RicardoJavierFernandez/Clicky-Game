@@ -3,10 +3,6 @@ import '../styles/styles.css';
 
 class NavBar extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-    
     render() {
         return (
             <div id="navBar">
