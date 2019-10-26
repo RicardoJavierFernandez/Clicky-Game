@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Clicky-Game/static/css/main.804bb538.chunk.css",
+    "main.js": "/Clicky-Game/static/js/main.701f46d3.chunk.js",
+    "main.js.map": "/Clicky-Game/static/js/main.701f46d3.chunk.js.map",
+    "runtime-main.js": "/Clicky-Game/static/js/runtime-main.8ac3e39b.js",
+    "runtime-main.js.map": "/Clicky-Game/static/js/runtime-main.8ac3e39b.js.map",
+    "static/js/2.cb751e63.chunk.js": "/Clicky-Game/static/js/2.cb751e63.chunk.js",
+    "static/js/2.cb751e63.chunk.js.map": "/Clicky-Game/static/js/2.cb751e63.chunk.js.map",
+    "index.html": "/Clicky-Game/index.html",
+    "precache-manifest.fc9b790f83b08f474f6f20334aa10f98.js": "/Clicky-Game/precache-manifest.fc9b790f83b08f474f6f20334aa10f98.js",
+    "service-worker.js": "/Clicky-Game/service-worker.js",
+    "static/css/main.804bb538.chunk.css.map": "/Clicky-Game/static/css/main.804bb538.chunk.css.map",
+    "static/media/flamingo.jpg": "/Clicky-Game/static/media/flamingo.e8051066.jpg",
+    "static/media/meerkat.jpg": "/Clicky-Game/static/media/meerkat.afc90f73.jpg",
+    "static/media/panda.jpg": "/Clicky-Game/static/media/panda.815a01dc.jpg",
+    "static/media/peacock.jpg": "/Clicky-Game/static/media/peacock.0e735323.jpg",
+    "static/media/squirrel.jpg": "/Clicky-Game/static/media/squirrel.afed69f5.jpg",
+    "static/media/tiger.jpg": "/Clicky-Game/static/media/tiger.ec5ed519.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ac3e39b.js",
+    "static/js/2.cb751e63.chunk.js",
+    "static/css/main.804bb538.chunk.css",
+    "static/js/main.701f46d3.chunk.js"
+  ]
+}
