@@ -6,30 +6,57 @@ import img2 from '../images/tiger.jpg';
 import img3 from '../images/flamingo.jpg';
 import img4 from '../images/squirrel.jpg';
 
+
 class Images extends Component {
     constructor(props) {
         super(props);
         this.state = {
             score: 0,
-            topScore: 0
+            topScore: 0,
+            images: [],
+            img1Clicked: false,
+            img2Clicked: false,
+            img3Clicked: false,
+            img4Clicked: false,
         }
     }
 
-    handleIncrement = () => {
-        this.setState()
+    handleIncrement = (event) => {
+        this.setState({[event.target.name]: true, score: this.state.score + 1})
+        console.log(event.target.name, this.state[event.target.name])
     }
+
+    // https://stackoverflow.com/questions/44607396/importing-multiple-files-in-react
+    // importAll = (r) => {
+    //     let images = {};
+    //     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    //     return images;
+    // }
+
+    importAll = (r) => {
+        let images = [];
+        r.keys().map((item, index) => { images.push(r(item)) });
+        return images;
+    }
+
+    componentDidMount() {
+        let images = this.importAll(require.context('../images', false, /\.jpg/));
+        this.setState({images: images});
+    }
+    
+    // <img src={images['0.jpg']} />
 
     render() {
         return (
             <div>
-                <NavBar score={this.state.score} topScore={this.state.topScore}>
-                    This is a Nav Bar
-                </NavBar>
+                <NavBar score={this.state.score} topScore={this.state.topScore} title={"Clicky Game"}/>
                 <br />
-                <div><img src={img1}></img></div>
-                <div><img src={img2}></img></div>
-                <div><img src={img3}></img></div>
-                <div><img src={img4}></img></div>
+                <div id="container">
+                    {this.state.images.map((item, index) => 
+                        <div>
+                            <img src={item} alt="" key={index} name="img1Clicked" onClick={this.handleIncrement}></img>
+                        </div>)}
+                </div>
             </div>
         )
     }

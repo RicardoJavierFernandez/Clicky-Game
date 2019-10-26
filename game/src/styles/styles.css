@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'PT Sans', sans-serif;
 }
 
 #navBar {
@@ -13,14 +14,34 @@ body {
 
 #score, #topScore {
     color: #000000;
-    text-align: right;
+    text-align: center;
+}
+
+#gameStatus {
+    text-align: center;
+}
+
+#container {
+    margin-right: 32%;
+    margin-left: 32%;
 }
 
 img {
     width: 250px;
     height: 200px;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 5px;
+    float: left;
+    margin: 20px 20px;
+}
+
+img:hover {
+    cursor: pointer;
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.8;
+}
+
+#clear {
+    clear: both;
 }
