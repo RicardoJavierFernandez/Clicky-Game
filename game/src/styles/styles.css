@@ -1,11 +1,14 @@
 body {
     margin: 0;
     font-family: 'PT Sans', sans-serif; 
+    overscroll-behavior: none;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,56,1) 35%, rgba(0,212,255,1) 100%);
 }
 
-#navBar {
-    font-size: 24px;
-    background: skyblue;
+.navBar {
+    font-size: 30px;
+    background: #00d4ff;
+    width: 100%;
 }
 
 #title {
@@ -26,12 +29,23 @@ body {
     margin-left: 32%;
 }
 
+.footer {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    background: #00d4ff;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
 img {
     width: 250px;
     height: 200px;
     display: block;
     float: left;
-    margin: 20px 20px;
+    margin: 25px 20px;
 }
 
 img:hover {
@@ -39,7 +53,7 @@ img:hover {
     width: 250px;
     height: 200px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 #clear {
