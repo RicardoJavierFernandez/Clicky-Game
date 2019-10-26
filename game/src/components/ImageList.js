@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -19,7 +19,7 @@ class ImageList extends Component {
                 <div id="container">
                     { this.props.children }
                 </div>
-                
+
                 <Footer title={this.title}/>
             </div>
         )

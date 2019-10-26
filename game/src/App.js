@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import ImageList from './components/ImageList';
 import ImageListItem from './components/ImageListItem';
 
