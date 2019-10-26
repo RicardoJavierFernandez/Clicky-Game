@@ -17,7 +17,7 @@ class ImageList extends Component {
                 />
 
                 <div id="container">
-                    { this.props.children }
+                    {this.props.children}
                 </div>
 
                 <Footer title={this.title}/>
